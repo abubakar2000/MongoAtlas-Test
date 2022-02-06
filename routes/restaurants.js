@@ -61,7 +61,6 @@ router.get('/', function (req, res, next) {
 
 router.get('/cuisine/:cuisine', (req, res) => {
 
-
   const uri = "mongodb+srv://abubakar2000:abubakar2000@cluster0.jm8lx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
   const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
   client.connect(err => {
@@ -72,7 +71,7 @@ router.get('/cuisine/:cuisine', (req, res) => {
       console.log(_);
       res.send(_)
     });
-    // client.close();
+
   });
 });
 
