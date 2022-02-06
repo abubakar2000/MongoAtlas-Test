@@ -59,10 +59,6 @@ router.get('/', function (req, res, next) {
   // res.send(data);
 });
 
-router.get('/cuisine', (req, res) => {
-
-});
-
 router.get('/cuisine/:cuisine', (req, res) => {
 
 
